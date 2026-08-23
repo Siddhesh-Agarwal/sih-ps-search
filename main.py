@@ -62,8 +62,9 @@ st.caption(f"{len(filtered)} of {len(df)} problem statements")
 
 st.dataframe(
     filtered,
-    hide_index=True,
     width="stretch",
+    height="content",
+    hide_index=True,
     column_config={
         "match_score": st.column_config.NumberColumn("Match %", format="%d"),
     },
